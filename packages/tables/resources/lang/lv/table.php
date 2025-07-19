@@ -2,66 +2,71 @@
 
 return [
 
+    'column_toggle' => [
+
+        'heading' => 'Kolonnas',
+
+    ],
+
     'columns' => [
 
-        'tags' => [
-            'more' => 'un :count vēl',
-        ],
-
-        'messages' => [
-            'copied' => 'Kopēts',
+        'text' => [
+            'more_list_items' => 'un :count vēl',
         ],
 
     ],
 
     'fields' => [
 
-        'search_query' => [
+        'bulk_select_page' => [
+            'label' => 'Atlasīt/noņemt atlasi no visiem ierakstiem, lai veiktu lielapjoma darbības.',
+        ],
+
+        'bulk_select_record' => [
+            'label' => 'Atlasīt/noņemt atlasi no ierksta :key, lai veiktu lielapjoma darbības.',
+        ],
+
+        'bulk_select_group' => [
+            'label' => 'Atlasīt/noņemt atlasi no grupas :title, lai veiktu lielapjoma darbības.',
+        ],
+
+        'search' => [
             'label' => 'Meklēt',
             'placeholder' => 'Meklēt',
+            'indicator' => 'Meklēt',
         ],
 
     ],
 
-    'pagination' => [
+    'summary' => [
 
-        'label' => 'Lapdales navigācija',
+        'heading' => 'Kopsavilkums',
 
-        'overview' => 'Rāda :first līdz :last no :total rezultātiem',
-
-        'fields' => [
-
-            'records_per_page' => [
-
-                'label' => 'vienā lappusē',
-
-                'options' => [
-                    'all' => 'Visi',
-                ],
-
-            ],
-
+        'subheadings' => [
+            'all' => 'Visi :label',
+            'group' => ':group kopsavilkums',
+            'page' => 'Šī lapa',
         ],
 
-        'buttons' => [
+        'summarizers' => [
 
-            'go_to_page' => [
-                'label' => 'Doties uz lapu :page',
+            'average' => [
+                'label' => 'Vidēji',
             ],
 
-            'next' => [
-                'label' => 'Nākamais',
+            'count' => [
+                'label' => 'Skaits',
             ],
 
-            'previous' => [
-                'label' => 'Iepriekšējais',
+            'sum' => [
+                'label' => 'Summa',
             ],
 
         ],
 
     ],
 
-    'buttons' => [
+    'actions' => [
 
         'disable_reordering' => [
             'label' => 'Pabeigt ierakstu kārtošanu',
@@ -75,8 +80,12 @@ return [
             'label' => 'Filtrēt',
         ],
 
-        'open_actions' => [
-            'label' => 'Atvērt darbības',
+        'group' => [
+            'label' => 'Grupēt',
+        ],
+
+        'open_bulk_actions' => [
+            'label' => 'Lielapjoma darbības',
         ],
 
         'toggle_columns' => [
@@ -86,12 +95,16 @@ return [
     ],
 
     'empty' => [
+
         'heading' => 'Nav atrasts neviens ieraksts',
+
+        'description' => 'Izveidot :model, lai sāktu.',
+
     ],
 
     'filters' => [
 
-        'buttons' => [
+        'actions' => [
 
             'remove' => [
                 'label' => 'Noņemt filtru',
@@ -107,6 +120,8 @@ return [
             ],
 
         ],
+
+        'heading' => 'Filtri',
 
         'indicator' => 'Aktīvie filtri',
 
@@ -132,13 +147,37 @@ return [
 
     ],
 
+    'grouping' => [
+
+        'fields' => [
+
+            'group' => [
+                'label' => 'Grupēt pēc',
+                'placeholder' => 'Grupēt pēc',
+            ],
+
+            'direction' => [
+
+                'label' => 'Grupēšanas virziens',
+
+                'options' => [
+                    'asc' => 'Augošs',
+                    'desc' => 'Dilstošs',
+                ],
+
+            ],
+
+        ],
+
+    ],
+
     'reorder_indicator' => 'Velciet un nometiet ierakstus secībā.',
 
     'selection_indicator' => [
 
-        'selected_count' => 'Izvēlēts 1 ieraksts.|:count ieraksti izvēlēti.',
+        'selected_count' => 'Izvēlēts 1 ieraksts|:count ieraksti izvēlēti',
 
-        'buttons' => [
+        'actions' => [
 
             'select_all' => [
                 'label' => 'Atlasīt visus :count',
