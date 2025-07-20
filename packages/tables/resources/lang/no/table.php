@@ -10,6 +10,10 @@ return [
 
     'columns' => [
 
+        'actions' => [
+            'label' => 'Handling|Handlinger',
+        ],
+
         'text' => [
 
             'actions' => [

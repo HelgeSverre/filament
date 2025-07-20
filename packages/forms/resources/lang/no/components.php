@@ -11,15 +11,67 @@ return [
             ],
 
             'add' => [
+
                 'label' => 'Legge til i :label',
+
+                'modal' => [
+
+                    'heading' => 'Legg til i :label',
+
+                    'actions' => [
+
+                        'add' => [
+                            'label' => 'Legg til',
+                        ],
+
+                    ],
+
+                ],
+
             ],
 
             'add_between' => [
+
                 'label' => 'Sett inn mellom',
+
+                'modal' => [
+
+                    'heading' => 'Legg til i :label',
+
+                    'actions' => [
+
+                        'add' => [
+                            'label' => 'Legg til',
+                        ],
+
+                    ],
+
+                ],
+
             ],
 
             'delete' => [
                 'label' => 'Slett',
+            ],
+
+            'edit' => [
+
+                'label' => 'Rediger',
+
+                'modal' => [
+
+                    'heading' => 'Rediger blokk',
+
+                    'actions' => [
+
+                        'save' => [
+                            'label' => 'Lagre endringer',
+                        ],
+
+                    ],
+
+                ],
+
             ],
 
             'reorder' => [
@@ -356,6 +408,8 @@ return [
 
             'create_option' => [
 
+                'label' => 'Opprett',
+
                 'modal' => [
 
                     'heading' => 'Opprett',
@@ -377,6 +431,8 @@ return [
             ],
 
             'edit_option' => [
+
+                'label' => 'Rediger',
 
                 'modal' => [
 

@@ -11,8 +11,15 @@ return [
         'form' => [
 
             'file' => [
+
                 'label' => 'Fil',
+
                 'placeholder' => 'Last opp en CSV fil',
+
+                'rules' => [
+                    'duplicate_columns' => '{0} Filen kan ikke ha mer enn én tom kolonneoverskrift.|{1,*} Filen kan ikke ha dupliserte kolonneoverskrifter: :columns.',
+                ],
+
             ],
 
             'columns' => [
@@ -72,6 +79,7 @@ return [
         'file_name' => 'import-:import_id-:csv_name-rader-feilet',
         'error_header' => 'feil',
         'system_error' => 'Systemfeil, vennligst kontakt support.',
+        'column_mapping_required_for_new_record' => 'Kolonnen :attribute er påkrevd, men ble ikke tilordnet en kolonne i filen.',
     ],
 
 ];

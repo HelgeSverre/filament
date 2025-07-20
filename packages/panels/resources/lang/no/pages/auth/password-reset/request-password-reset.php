@@ -32,6 +32,10 @@ return [
 
     'notifications' => [
 
+        'sent' => [
+            'body' => 'Hvis kontoen ikke finnes, får du ingen e-post.',
+        ],
+
         'throttled' => [
             'title' => 'For mange forsøk',
             'body' => 'Vennligst forsøk igjen om :seconds sekunder.',
